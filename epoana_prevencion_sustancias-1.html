@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EPOANA | Vive libre, decide con conciencia</title>
+<style>
+:root{--navy:#14264b;--blue:#3157a4;--purple:#7254a8;--cyan:#dff5f5;--light:#f4f7fc;--ink:#26334b;--muted:#66738a;--white:#fff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--ink);line-height:1.6}
+header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #101d382b}
+.nav{max-width:1120px;margin:auto;padding:13px 22px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.5px}.brand span{color:#9de2e4}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:.92rem;font-weight:600}
+nav a:hover{color:#9de2e4}
+.hero{background:linear-gradient(120deg,#14264b 0%,#3157a4 60%,#7254a8 100%);color:white;padding:85px 22px 78px}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+.kicker{color:#b9eeee;font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.82rem}
+h1{font-size:clamp(2.3rem,5vw,4.3rem);line-height:1.08;margin:12px 0 18px}
+.hero p{font-size:1.12rem;max-width:650px;color:#edf2ff}
+.hero-art{border:1px solid #ffffff45;background:#ffffff16;border-radius:28px;padding:30px;text-align:center}
+.hero-art .symbol{font-size:5rem;display:block}
+.hero-art strong{font-size:1.3rem}
+.btn{display:inline-block;margin-top:14px;padding:12px 20px;background:#a9e7e4;color:#14264b;border-radius:30px;text-decoration:none;font-weight:800}
+section{max-width:1120px;margin:auto;padding:65px 22px}
+.section-title{text-align:center;margin-bottom:32px}
+.section-title h2{font-size:2rem;color:var(--navy);margin:0 0 8px}
+.section-title p{color:var(--muted);margin:0}
+.intro{max-width:850px;margin:auto;text-align:center;font-size:1.08rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border-radius:18px;padding:23px;box-shadow:0 7px 24px #1b31500d;border:1px solid #e7edf6}
+.card .emoji{font-size:2rem}
+.card h3{color:var(--blue);margin:10px 0 7px}
+.card p{margin:0;color:var(--muted)}
+.soft{background:#eaf0fb}
+.soft section{padding-top:58px;padding-bottom:58px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.panel{background:white;border-radius:18px;padding:25px}
+.panel h3{color:var(--navy);margin-top:0}
+ul{padding-left:22px}
+li{margin:8px 0}
+.tip{background:#e2f5f2;border-left:5px solid #36a69b;padding:17px 20px;border-radius:10px;margin-top:20px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{background:white;padding:20px;border-radius:16px;text-align:center;border-bottom:4px solid #7254a8}
+.step b{display:block;font-size:1.7rem;color:#7254a8}
+.quiz{max-width:760px;margin:auto;background:white;border-radius:20px;padding:28px;box-shadow:0 8px 28px #1b315014}
+.quiz h3{margin-top:0;color:var(--navy)}
+.quiz label{display:block;padding:10px 12px;margin:8px 0;border:1px solid #dce4f0;border-radius:10px;cursor:pointer}
+.quiz button{border:0;background:var(--blue);color:white;padding:12px 20px;border-radius:25px;font-weight:700;cursor:pointer;margin-top:12px}
+#resultado{font-weight:700;margin-top:14px}
+.help{background:var(--navy);color:white;border-radius:22px;padding:30px;text-align:center}
+.help h2{color:white}.help p{color:#e4eaff}
+.help a{color:#b9eeee;font-weight:700}
+footer{background:#101d38;color:#dce5f8;text-align:center;padding:25px 18px}
+footer p{margin:5px}
+.small{font-size:.86rem;color:#aebbd3}
+@media(max-width:800px){.hero-inner,.two-col{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.hero-art{max-width:400px;margin:auto}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.nav{justify-content:center}nav{justify-content:center;gap:11px}nav a{font-size:.83rem}.hero{padding:58px 20px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="nav">
+  <div class="brand">EPOANA <span>• CONCIENCIA Y PREVENCIÓN</span></div>
+  <nav aria-label="Navegación principal">
+   <a href="#inicio">Inicio</a><a href="#informate">Infórmate</a><a href="#riesgos">Riesgos</a><a href="#prevencion">Prevención</a><a href="#ayuda">Ayuda</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<div class="hero" id="inicio">
+ <div class="hero-inner">
+  <div>
+   <div class="kicker">Comunidad estudiantil EPOANA</div>
+   <h1>Tu futuro vale más.<br>¡Elige cuidarte!</h1>
+   <p>Infórmate, reconoce los riesgos y toma decisiones responsables. La prevención comienza con información, confianza y apoyo.</p>
+   <a class="btn" href="#informate">Conoce más</a>
+  </div>
+  <div class="hero-art">
+   <span class="symbol">🌱</span>
+   <strong>Vive libre, decide con conciencia</strong>
+   <p>Una comunidad informada puede construir un entorno escolar más saludable y seguro.</p>
+  </div>
+ </div>
+</div>
+
+<section id="informate">
+ <div class="section-title"><h2>¿Qué son las sustancias nocivas?</h2><p>Conocer es el primer paso para prevenir.</p></div>
+ <p class="intro">Son sustancias que pueden alterar el funcionamiento del cuerpo y del cerebro, afectar la salud y causar problemas en la vida personal, familiar, social y escolar. Entre ellas se encuentran el alcohol, el tabaco, los productos para vapear y otras drogas.</p>
+</section>
+
+<div class="soft" id="riesgos">
+ <section>
+  <div class="section-title"><h2>¿Cómo pueden afectar?</h2><p>Los efectos pueden variar, pero ningún consumo está libre de riesgos.</p></div>
+  <div class="cards">
+   <article class="card"><span class="emoji">🧠</span><h3>Salud mental</h3><p>Pueden afectar la memoria, la atención, el estado de ánimo y la capacidad de tomar decisiones.</p></article>
+   <article class="card"><span class="emoji">❤️</span><h3>Salud física</h3><p>Pueden perjudicar distintos órganos y aumentar el riesgo de enfermedades, intoxicaciones y accidentes.</p></article>
+   <article class="card"><span class="emoji">📚</span><h3>Vida escolar</h3><p>Pueden dificultar el aprendizaje, la concentración, la asistencia y la convivencia con otras personas.</p></article>
+   <article class="card"><span class="emoji">👥</span><h3>Relaciones</h3><p>Pueden generar conflictos familiares, dificultades sociales y situaciones de riesgo.</p></article>
+   <article class="card"><span class="emoji">🎯</span><h3>Metas personales</h3><p>Pueden interferir con los proyectos, las actividades y las oportunidades que queremos alcanzar.</p></article>
+   <article class="card"><span class="emoji">⚠️</span><h3>Dependencia</h3><p>Algunas sustancias pueden producir dependencia y hacer necesario buscar atención profesional.</p></article>
+  </div>
+ </section>
+</div>
+
+<section>
+ <div class="section-title"><h2>Factores de riesgo y presión social</h2><p>Reconocerlos ayuda a responder de manera segura.</p></div>
+ <div class="two-col">
+  <div class="panel"><h3>Situaciones que pueden aumentar el riesgo</h3>
+   <ul><li>Presión de amistades o deseo de pertenecer a un grupo.</li><li>Desinformación sobre las consecuencias.</li><li>Dificultades emocionales o falta de apoyo.</li><li>Normalizar el consumo en el entorno.</li></ul>
+  </div>
+  <div class="panel"><h3>Recuerda</h3>
+   <ul><li>No tienes que hacer algo para agradar a otras personas.</li><li>Puedes decir “no” con firmeza y retirarte de una situación incómoda.</li><li>Pedir ayuda es una decisión valiente.</li><li>Nadie debe ser señalado o discriminado por necesitar apoyo.</li></ul>
+  </div>
+ </div>
+ <div class="tip"><strong>Una frase para recordar:</strong> “No necesito poner en riesgo mi bienestar para encajar”.</div>
+</section>
+
+<div class="soft" id="prevencion">
+ <section>
+  <div class="section-title"><h2>¿Cómo podemos prevenir?</h2><p>Pequeñas decisiones fortalecen nuestro bienestar.</p></div>
+  <div class="steps">
+   <div class="step"><b>01</b><strong>Infórmate</strong><p>Consulta fuentes confiables y pregunta tus dudas.</p></div>
+   <div class="step"><b>02</b><strong>Exprésate</strong><p>Habla con alguien de confianza sobre lo que sientes.</p></div>
+   <div class="step"><b>03</b><strong>Elige hábitos saludables</strong><p>Practica deporte, arte y actividades que disfrutes.</p></div>
+   <div class="step"><b>04</b><strong>Busca apoyo</strong><p>Acude a orientación escolar o personal de salud.</p></div>
+  </div>
+ </section>
+</div>
+
+<section>
+ <div class="section-title"><h2>¡Comprueba lo que aprendiste!</h2><p>Responde esta pregunta para reflexionar.</p></div>
+ <div class="quiz">
+  <h3>Si alguien te presiona para consumir una sustancia, ¿qué puedes hacer?</h3>
+  <form id="quizForm">
+   <label><input type="radio" name="respuesta" value="a"> A) Aceptar para que no se burlen.</label>
+   <label><input type="radio" name="respuesta" value="b"> B) Decir que no, alejarte y buscar apoyo si lo necesitas.</label>
+   <label><input type="radio" name="respuesta" value="c"> C) Hacerlo sin informarte.</label>
+   <button type="submit">Comprobar respuesta</button>
+  </form>
+  <p id="resultado" aria-live="polite"></p>
+ </div>
+</section>
+
+<section id="ayuda">
+ <div class="help">
+  <h2>No tienes que enfrentar las dificultades a solas</h2>
+  <p>Si tú o alguien que conoces necesita orientación sobre consumo de sustancias o salud mental, habla con una persona adulta de confianza, orientación escolar o un profesional de salud.</p>
+  <p><strong>Línea de la Vida (México): 800 911 2000</strong><br>Atención y orientación las 24 horas, todos los días.</p>
+  <p>Más información en el sitio oficial: <a href="https://www.gob.mx/lineadelavida" target="_blank" rel="noopener">La Línea de la Vida</a>.</p>
+ </div>
+</section>
+</main>
+
+<footer>
+ <p><strong>EPOANA | Escuela Preparatoria Oficial Anexa a la Normal de Atlacomulco</strong></p>
+ <p>Proyecto escolar de concientización y prevención.</p>
+ <p class="small">La información busca orientar, prevenir y promover el respeto. No sustituye la atención de profesionales de salud.</p>
+</footer>
+
+<script>
+document.getElementById('quizForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const seleccion=document.querySelector('input[name="respuesta"]:checked');
+ const salida=document.getElementById('resultado');
+ if(!seleccion){salida.textContent='Selecciona una respuesta para continuar.';return;}
+ if(seleccion.value==='b'){
+  salida.textContent='¡Correcto! Cuidar tus decisiones y pedir apoyo cuando lo necesitas es importante.';
+ }else{
+  salida.textContent='Esa no es la opción más segura. Recuerda: puedes decir no, alejarte y buscar apoyo.';
+ }
+});
+</script>
+</body>
+</html>
